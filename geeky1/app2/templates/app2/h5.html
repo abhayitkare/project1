@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>session get</h1>
+    {{name}} <br> <hr>
+    {{lname}}
+    {{age}}
+     
+    <h4>return from func</h4>
+    {{request.session.get_session_cookie_age}} <br>
+    {{request.session.get_expiry_age}} <br>                
+    {{request.session.get_expiry_date}}  <br>           
+    {{request.session.get_expire_at_browser_close}} <br>
+    {{request.session.test_cookie_worked}} <br>
+    <h4>#########################</h4>
+    {%for i,j in keys%}
+        {{i}} {{j}}<br>
+    {%endfor%}  <hr>
+</body>
+</html>
